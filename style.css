@@ -1,0 +1,152 @@
+
+/* Сбрасываем стандартные отступы браузера */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Общие настройки страницы */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #222222;
+}
+
+/* Шапка сайта */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 80px;
+    background-color: #ffffff;
+}
+
+/* Логотип */
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Навигация */
+.navigation {
+    display: flex;
+    gap: 30px;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #222222;
+    font-size: 16px;
+}
+
+/* Главный экран */
+.hero {
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    padding: 80px;
+    background-color: #e9e8ff;
+}
+
+/* Содержимое главного экрана */
+.hero-content {
+    max-width: 650px;
+}
+
+/* Подзаголовок */
+.hero-subtitle {
+    font-size: 14px;
+    letter-spacing: 3px;
+    color: #6256d9;
+    margin-bottom: 25px;
+}
+
+/* Главный заголовок */
+.hero h1 {
+    font-size: 56px;
+    line-height: 1.15;
+    margin-bottom: 25px;
+}
+
+/* Описание */
+.hero-description {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 35px;
+}
+
+/* Кнопка */
+.hero-button {
+    display: inline-block;
+    padding: 16px 30px;
+    background-color: #6256d9;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 6px;
+}
+/* Адаптация для планшетов и телефонов */
+@media (max-width: 768px) {
+
+    .header {
+        padding: 20px;
+    }
+
+    .navigation {
+        gap: 15px;
+    }
+
+    .hero {
+        min-height: 500px;
+        padding: 40px 20px;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .hero-description {
+        font-size: 16px;
+    }
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.menu-toggle span {
+    width: 25px;
+    height: 2px;
+    background-color: #222222;
+}
+
+@media (max-width: 768px) {
+    .header {
+        position: relative;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .navigation {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 20px;
+        background-color: #ffffff;
+        flex-direction: column;
+        z-index: 10;
+    }
+
+    .navigation.active {
+        display: flex;
+    }
+}
