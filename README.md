@@ -51,6 +51,23 @@ Responsive landing page for a fictional digital agency.
 
 [View Project](https://github.com/elena-webdev-hub/portfolio/tree/main/projects/landing-page)
 
+
+### NORD HOME — Email Marketing Template
+
+Responsive promotional email template for a fictional home decor store.
+
+- Table-based HTML layout
+- Inline CSS
+- Responsive email design
+- Outlook VML button
+- Hidden preheader
+- Mobile-friendly product cards
+
+[View Project](projects/email-template/)
+
+[View Source Code](projects/email-template/index.html)
+
+
 ## Contact
 
 GitHub: [elena-webdev-hub](https://github.com/elena-webdev-hub)
